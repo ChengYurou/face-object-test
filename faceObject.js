@@ -12,3 +12,13 @@ class Shape {
 var shape = new Shape('我的形状');
 console.log(`名称：${shape.getName()}`);
 
+class Square extends Shape {
+  constructor(length) {
+    super('正方形');
+    this.length = length;
+  }
+
+  getLength() { return this.length; }
+
+  getPerimeter() { return this.length * 4; }
+}
